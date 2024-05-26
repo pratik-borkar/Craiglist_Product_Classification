@@ -21,7 +21,7 @@ This project aims to improve the categorization and search efficiency in the Hea
 
 - **Text Processing**: Tokenized the textual content of each product.
 - **Model Development**:
-  - [**Logistic Regression**](Categorization_Logistic_Regression.ipynb)Achieved an accuracy of 0.58 using a TF-IDF vectorizer.
+  - [**Logistic Regression**](Categorization_Logistic_Regression.ipynb) :Achieved an accuracy of 0.58 using a TF-IDF vectorizer.
   - [**LSTM**](Categorization_LSTM.ipynb)
     - Accuracy: 0.595
     - Configuration: One-hot encoding, embedding layer, spatial dropout, LSTM layer, dense output layer with softmax activation.
