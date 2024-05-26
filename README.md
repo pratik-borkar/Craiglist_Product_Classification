@@ -9,7 +9,7 @@ This project aims to improve the categorization and search efficiency in the Hea
 ### Phase 1: Data Collection
 
 - **Tools Used**: Selenium and BeautifulSoup for web scraping.
-- **Data Scraped**: Retrieved approximately 1,680 product URLs across 19 pages, capturing detailed product information including descriptions, titles, and IDs.
+- **Data Scraped**: Retrieved approximately [1,680 product URLs across 19 pages](Web_Scraping_Code_1.ipynb), capturing [detailed product information including descriptions, titles, and IDs](Web_Scraping_Code_2.ipynb).
 - **Data Organization**: Compiled all extracted data into a CSV format for further processing.
 
 ### Phase 2: Data Labeling
@@ -21,12 +21,12 @@ This project aims to improve the categorization and search efficiency in the Hea
 
 - **Text Processing**: Tokenized the textual content of each product.
 - **Model Development**:
-  - **Logistic Regression**: Achieved an accuracy of 0.58 using a TF-IDF vectorizer.
-  - **LSTM**: [LSTM](Categorization_LSTM.ipynb)
+  - [**Logistic Regression**](Categorization_Logistic_Regression.ipynb)Achieved an accuracy of 0.58 using a TF-IDF vectorizer.
+  - [**LSTM**](Categorization_LSTM.ipynb)
     - Accuracy: 0.595
     - Configuration: One-hot encoding, embedding layer, spatial dropout, LSTM layer, dense output layer with softmax activation.
     - Hyperparameters: GloVe dimensions (50, 100, 200, 300), LSTM layer sizes (100 to 200), epochs (1 to 6).
-  - **SVM**:
+  - [**SVM**](Categorization_SVM.ipynb)
     - Best Accuracy: 0.6666
     - Configuration: TF-IDF vectorizer, multiple kernels tested (Polynomial, Sigmoid, RBF), with RBF providing the best results.
 
